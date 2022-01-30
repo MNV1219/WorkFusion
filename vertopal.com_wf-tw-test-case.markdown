@@ -1,6 +1,6 @@
 Hi! Here is a document that you need to review. Please convert this
 document to using the editor of your choice (Atom, Sublime Text, etc.).
-Then, submit your [Markdown](https:) file to To do this, you may need to create an
+Then, submit your Markdown file to To do this, you may need to create an
 account and a repository. Note that the repository needs to be public so
 we can review your work.
 
@@ -28,22 +28,22 @@ and a java code reference that can be used in this bot config.
 
 **How to Create, Test, and Run**
 
-> 1. Create and test a Web-Harvest config using the WorkFusion Studio (Eclipsebased IDE).                                  
+ 1. Create and test a Web-Harvest config using the WorkFusion Studio (Eclipsebased IDE).                                  
 
-> 2. Create a Bot Use Case in WorkFusion. Choose the Bot Use Case type
-> (ETL is the best practice, because it better fits for reusing and adds
+ 2. Create a Bot Use Case in WorkFusion. Choose the Bot Use Case type
+ (ETL is the best practice, because it better fits for reusing and adds
 flexibility)
 
-> 3. Create a BP and include a Bot Step based on this Use Case.
-> Alternatively, you can use WorkFusion Repository and import a Bot
-> Config Bundle to WorkFusion.
->
-> 4. Test the Bot Config in BP using a small input batch.
->
-> 5. Make changes, if needed: column names, use proxy, datastore
-> connection, output column names.
->
-> 6. Update the created Bot Use Case and use it in your production BP.
+ 3. Create a BP and include a Bot Step based on this Use Case.
+ Alternatively, you can use WorkFusion Repository and import a Bot
+ Config Bundle to WorkFusion.
+
+ 4. Test the Bot Config in BP using a small input batch.
+
+ 5. Make changes, if needed: column names, use proxy, datastore
+ connection, output column names.
+
+ 6. Update the created Bot Use Case and use it in your production BP.
 
 Alternatively you can create a Bot Task in BP (Design Process tab) from
 scratch (Blank Use Case) and paste your code, but this approach leads to
@@ -68,21 +68,21 @@ All the columns created by the Bot Task can be used in further BP steps
 
 The following example:
 
-> 1. gets HTTP response from URLs listed in the **url _to_ check** column of the input data file;    
->                           |
-> 2. records the HTTP response into the **http_response** variable;
-> 
-> 3. exports all original columns and appends a new **http** column
-> containing the **http_response** variable value.
->
-> **Bot Config Example**
+ 1. gets HTTP response from URLs listed in the **url _to_ check** column of the input data file;
+                            
+ 2. records the HTTP response into the **http_response** variable;
+ 
+ 3. exports all original columns and appends a new **http** column
+ containing the **http_response** variable value.
 
->\<?xml version=\"1.0\" encoding=\"UTF-8\"?\>
+ **Bot Config Example**
 
->\<config\>
+><?xml version=\"1.0\" encoding=\"UTF-8\"?\
 
-> \<!\--defining variable\--\>
->
+><config\>
+
+>\<!\--defining variable\--\>
+
 > \<var-defname=\"http_response\"\>
 >
 > \<!\--passing the appropriate value from url_to_check column in input
