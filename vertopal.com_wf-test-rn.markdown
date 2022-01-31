@@ -15,7 +15,7 @@ release includes but is not limited to the following features:
 
 &ensp;•&ensp;**WorkSpace 2.0** is a human-in-the-loop tool designed to tackle
  various issues with the exception-handling process, allowing faster
- completion and improving compliance. Compared to the previous version,
+ &ensp;completion and improving compliance. Compared to the previous version,
  WorkSpace 2.0 is strengthened with a feature that enables you to
  manipulate and adjust the workflow.
 
