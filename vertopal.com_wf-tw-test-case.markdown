@@ -28,7 +28,7 @@ and a java code reference that can be used in this bot config.
 
 **How to Create, Test, and Run**
 
-&ensp;1.&ensp; Create and test a Web-Harvest config using the WorkFusion Studio (Eclipsebased IDE).                                  
+&ensp;1.&ensp; Create and test a Web-Harvest config using the WorkFusion Studio (Eclipsebased IDE).                               
 
 &ensp;2.&ensp; Create a Bot Use Case in WorkFusion. Choose the Bot Use Case type
 (ETL is the best practice, because it better fits for reusing 
@@ -36,7 +36,7 @@ and a java code reference that can be used in this bot config.
 
 &ensp;3.&ensp; Create a BP and include a Bot Step based on this Use Case.
  &ensp;Alternatively, you can use WorkFusion Repository and import a Bot
- &ensp;&ensp;&ensp;&ensp;	 	Config Bundle to WorkFusion.
+ &ensp;&ensp;&ensp;&ensp; Config Bundle to WorkFusion.
 
 &ensp;4.&ensp; Test the Bot Config in BP using a small input batch.
 
@@ -68,12 +68,12 @@ All the columns created by the Bot Task can be used in further BP steps
 
 The following example:
 
- 1. gets HTTP response from URLs listed in the **url _to_ check** column of the input data file;
+ 1. gets HTTP response from URLs listed in the **url_ to_ check** column of the input data file;
                            
  2. records the HTTP response into the **http_response** variable;
  
  3. exports all original columns and appends a new **http** column
- &ensp;containing the **http_response** variable value.
+    containing the **http_response** variable value.
 
  **Bot Config Example**
 
