@@ -4,8 +4,8 @@ Then, submit your Markdown file to To do this, you may need to create an
 account and a repository. Note that the repository needs to be public so
 we can review your work.
 
-If you feel that some edits are a matter of style, follow the or just
-leave your considerations as a comment. Thank you, and good luck!
+If you feel that some edits are a matter of style, follow the Google Developer Style
+Guide or just leave your considerations as a comment. Thank you, and good luck!
 
 ---------------
 
@@ -28,22 +28,22 @@ and a java code reference that can be used in this bot config.
 
 **How to Create, Test, and Run**
 
- 1. Create and test a Web-Harvest config using the WorkFusion Studio (Eclipsebased IDE).                                  
+&ensp;1.&ensp; Create and test a Web-Harvest config using the WorkFusion Studio (Eclipsebased IDE).                                  
 
- 2. Create a Bot Use Case in WorkFusion. Choose the Bot Use Case type
- (ETL is the best practice, because it better fits for reusing and adds
+&ensp;2.&ensp; Create a Bot Use Case in WorkFusion. Choose the Bot Use Case type
+&ensp;(ETL is the best practice, because it better fits for reusing &ensp;and adds
 flexibility)
 
- 3. Create a BP and include a Bot Step based on this Use Case.
- Alternatively, you can use WorkFusion Repository and import a Bot
- Config Bundle to WorkFusion.
+&ensp;3.&ensp; Create a BP and include a Bot Step based on this Use Case.
+ &ensp;Alternatively, you can use WorkFusion Repository and import a Bot
+ &ensp;Config Bundle to WorkFusion.
 
- 4. Test the Bot Config in BP using a small input batch.
+&ensp;4.&ensp; Test the Bot Config in BP using a small input batch.
 
- 5. Make changes, if needed: column names, use proxy, datastore
+&ensp;5.&ensp; Make changes, if needed: column names, use proxy, datastore
  connection, output column names.
 
- 6. Update the created Bot Use Case and use it in your production BP.
+&ensp;6.&ensp; Update the created Bot Use Case and use it in your production BP.
 
 Alternatively you can create a Bot Task in BP (Design Process tab) from
 scratch (Blank Use Case) and paste your code, but this approach leads to
@@ -69,36 +69,38 @@ All the columns created by the Bot Task can be used in further BP steps
 The following example:
 
  1. gets HTTP response from URLs listed in the **url _to_ check** column of the input data file;
-                            
+                           
  2. records the HTTP response into the **http_response** variable;
  
  3. exports all original columns and appends a new **http** column
- containing the **http_response** variable value.
+ &ensp;containing the **http_response** variable value.
 
  **Bot Config Example**
 
-<?xml version=\"1.0\" encoding=\"UTF-8\"?\
+\<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 
 <config\>
 
->\<!\--defining variable\--\>
+&ensp;\<!\--defining variable\--\>
+>
+&ensp;\<var-defname=\"http_response\"\>
+>
+&ensp;&ensp;&ensp;\<!\--passing the appropriate value from url_to_check column in input data file
+>
+as a parameter for http plugin\--\>
+>
+&ensp;&ensp;&ensp;\<http url=\"\${url_to_check}\"\>\</http\> &ensp;&ensp;	\</var-def\>
+\
+\
+\
+&ensp;\<!\--exporting all original input columns\--\>
+>
+&ensp;\<export include-original-data=\"true\"\>
+>
+&ensp;&ensp;&ensp;\<!\--adding a new column with the http plugin result to the export file\--\>
 
-> \<var-defname=\"http_response\"\>
->
-> \<!\--passing the appropriate value from url_to_check column in input
-> data file
->
-> as a parameter for http plugin\--\>
->
-> \<httpurl=\"\${url_to_check}\"\>\</http\> \</var-def\>
->
-> \<!\--exporting all original input columns\--\>
->
-> \<exportinclude-original-data=\"true\"\>
->
-> \<!\--adding a new column with the http plugin result to the export
-> file\--\>
->
-> \<single-columnname=\"http\"value=\"\${http_response}\"/\> \</export\>
-
->\</config\>
+&ensp;&ensp;&ensp;\<single-column name=\"http\"value=\"\${http_response}\"/\>  \</export\>
+\
+\
+\
+</config\>
