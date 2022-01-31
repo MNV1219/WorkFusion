@@ -77,9 +77,9 @@ The following example:
 
  **Bot Config Example**
 
-><?xml version=\"1.0\" encoding=\"UTF-8\"?\
+<?xml version=\"1.0\" encoding=\"UTF-8\"?\
 
-><config\>
+<config\>
 
 >\<!\--defining variable\--\>
 
