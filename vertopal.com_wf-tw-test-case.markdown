@@ -36,7 +36,7 @@ and a java code reference that can be used in this bot config.
 
 &ensp;3.&ensp; Create a BP and include a Bot Step based on this Use Case.
  &ensp;Alternatively, you can use WorkFusion Repository and import a Bot
- &ensp;&ensp;&ensp;&ensp;	 Config Bundle to WorkFusion.
+ &ensp;&ensp;&ensp;&ensp;	 	Config Bundle to WorkFusion.
 
 &ensp;4.&ensp; Test the Bot Config in BP using a small input batch.
 
