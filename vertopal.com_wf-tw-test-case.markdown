@@ -31,11 +31,12 @@ and a java code reference that can be used in this bot config.
 &ensp;1.&ensp; Create and test a Web-Harvest config using the WorkFusion Studio (Eclipsebased IDE).                                  
 
 &ensp;2.&ensp; Create a Bot Use Case in WorkFusion. Choose the Bot Use Case type
-(ETL is the best practice, because it better fits for reusing &ensp;&ensp;and adds flexibility)
+(ETL is the best practice, because it better fits for reusing 
+ &ensp;&ensp;&ensp;&ensp; and adds flexibility).
 
 &ensp;3.&ensp; Create a BP and include a Bot Step based on this Use Case.
  &ensp;Alternatively, you can use WorkFusion Repository and import a Bot
- &ensp;Config Bundle to WorkFusion.
+ &ensp;&ensp;&ensp;&ensp; Config Bundle to WorkFusion.
 
 &ensp;4.&ensp; Test the Bot Config in BP using a small input batch.
 
