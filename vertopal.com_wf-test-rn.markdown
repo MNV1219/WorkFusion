@@ -4,7 +4,7 @@ Text, etc.). Then, submit your Markdown file to github.com. To do this,
 you may need to create an account and a repository. Note that the
 repository needs to be public so we can review your work.*
 
-**Version 10.2**
+**Version 10.2** 
 
 **RELEASE DATE**\
 October 30, 2020
@@ -15,7 +15,7 @@ release includes but is not limited to the following features:
 
 &ensp;•&ensp;**WorkSpace 2.0** is a human-in-the-loop tool designed to tackle
  various issues with the exception-handling process, allowing faster
- &ensp;completion and improving compliance. Compared to the previous version,
+ completion and improving compliance. Compared to the previous version,
  WorkSpace 2.0 is strengthened with a feature that enables you to
  manipulate and adjust the workflow.
 
