@@ -63,17 +63,17 @@ available for comparison after actual testing.
 
 With the help of A/B tests, you can:
 
-&ensp;•&ensp; safely run data, historical or live, through a new version without
+&ensp;•&ensp;safely run data, historical or live, through a new version without
  impacting the original version.
 
 &ensp;•&ensp;manage variations of business processes to be tested.
 
-&ensp;•&ensp; test updated manual task efficiency and routing.
+&ensp;•&ensp;test updated manual task efficiency and routing.
 
-&ensp;•&ensp; automatically gather data to measure and compare two different
+&ensp;•&ensp;automatically gather data to measure and compare two different
  versions.
  
-&ensp;•&ensp; analyze business metrics and compare versions.
+&ensp;•&ensp;analyze business metrics and compare versions.
 
 **Bug fixes**
 
